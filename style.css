@@ -1,226 +1,189 @@
-/* ===== Global ===== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    line-height: 1.7;
-    color: #1f2937;
-    background: #f9fafb;
+margin: 0;
+font-family: 'Segoe UI', Arial, sans-serif;
+background: #0f172a;
+color: #fff;
+line-height: 1.6;
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+margin: auto;
 }
 
-/* ===== Header ===== */
+/* Hero */
 
-header {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
+.hero-header {
+position: relative;
+min-height: 100vh;
+
+```
+background:
+    linear-gradient(
+        rgba(15,23,42,0.75),
+        rgba(30,41,59,0.85)
+    ),
+    url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1800');
+
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+text-align: center;
+```
+
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero-content {
+position: relative;
+z-index: 2;
+}
+
+.live-badge {
+display: inline-block;
+background: #ef4444;
+padding: 8px 18px;
+border-radius: 30px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.hero-header h1 {
+font-size: 4rem;
+margin-bottom: 10px;
 }
 
 .tagline {
-    font-size: 1.2rem;
-    opacity: 0.95;
+color: #93c5fd;
+font-size: 1.3rem;
+margin-bottom: 30px;
 }
 
-/* ===== Hero ===== */
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: white;
+.hero-header h2 {
+font-size: 2rem;
+max-width: 800px;
+margin: auto;
 }
 
-.hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+.hero-header p {
+max-width: 700px;
+margin: 25px auto;
+font-size: 1.15rem;
 }
-
-.hero p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
-}
-
-/* ===== Button ===== */
 
 .btn {
-    display: inline-block;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: 0.2s ease;
+display: inline-block;
+background: linear-gradient(135deg,#06b6d4,#2563eb);
+color: white;
+padding: 15px 35px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: 700;
+transition: 0.3s;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
+transform: translateY(-3px);
 }
 
-/* ===== Sections ===== */
+/* Sections */
 
 .features,
 .usecases,
 .about {
-    padding: 70px 20px;
+padding: 80px 20px;
 }
 
 .features {
-    background: #f3f4f6;
+background: #111827;
+}
+
+.usecases {
+background: #1e293b;
+}
+
+.about {
+background: #111827;
 }
 
 .features h2,
 .usecases h2,
 .about h2 {
-    text-align: center;
-    margin-bottom: 40px;
+text-align: center;
+margin-bottom: 40px;
 }
 
-/* ===== Cards ===== */
+/* Cards */
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
 }
 
 .card {
-    flex: 1;
-    min-width: 220px;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+flex: 1;
+min-width: 220px;
+
+```
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(10px);
+
+border: 1px solid rgba(255,255,255,0.1);
+
+border-radius: 15px;
+padding: 25px;
+```
+
 }
 
 .card h3 {
-    margin-bottom: 10px;
+color: #60a5fa;
 }
 
-/* ===== Use Cases ===== */
-
 .usecases ul {
-    max-width: 600px;
-    margin: auto;
+max-width: 700px;
+margin: auto;
 }
 
 .usecases li {
-    margin-bottom: 10px;
+margin-bottom: 12px;
 }
 
-/* ===== About ===== */
-
-.about {
-    background: white;
-    text-align: center;
-}
-
-.about p {
-    max-width: 750px;
-    margin: auto;
-}
-
-/* ===== Legal Pages ===== */
-
-.page {
-    background: white;
-    margin: 40px auto;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
-
-.page h1 {
-    margin-bottom: 20px;
-}
-
-.page h2 {
-    margin-top: 35px;
-    margin-bottom: 15px;
-    color: #111827;
-}
-
-.page h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.page p,
-.page li {
-    margin-bottom: 12px;
-}
-
-.page ul {
-    margin-left: 20px;
-}
-
-/* ===== Links ===== */
-
-a {
-    color: #2563eb;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* ===== Footer ===== */
+/* Footer */
 
 footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-    margin-top: 50px;
-}
-
-footer p {
-    margin-bottom: 10px;
+background: #020617;
+text-align: center;
+padding: 40px;
 }
 
 footer a {
-    color: #93c5fd;
-    text-decoration: none;
+color: #60a5fa;
+text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
-/* ===== Mobile ===== */
+/* Mobile */
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
 
-    header h1 {
-        font-size: 2.2rem;
-    }
+```
+.hero-header h1 {
+    font-size: 2.5rem;
+}
 
-    .hero h2 {
-        font-size: 1.7rem;
-    }
+.hero-header h2 {
+    font-size: 1.5rem;
+}
 
-    .page {
-        padding: 25px;
-    }
+.cards {
+    flex-direction: column;
+}
+```
 
-    .cards {
-        flex-direction: column;
-    }
 }
