@@ -14,13 +14,15 @@ body {
     color: #1e293b;
 }
 .landing {
-height: 100vh;
+min-height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
 align-items: center;
-padding: 20px;
+
+padding: 30px 20px;
+
 text-align: center;
+
 }
 
 .live-badge {
@@ -32,34 +34,47 @@ margin-bottom: 15px;
 }
 
 h1 {
-    color: #1e3a8a;
+    margin: 10px 0;
 }
 
 .tagline {
-    color: #2563eb;
+    margin: 5px 0 20px;
 }
 
 h2 {
-    color: #0f172a;
+    margin: 10px 0;
+}
+
+.intro {
+    margin-bottom: 20px;
 }
 
 .usecases {
     color: #475569;
 }
+.cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
 
-.card {
-    width: 180px;
-    padding: 15px;
+max-width: 900px;
 
-    background: rgba(255,255,255,0.75);
+margin: 25px 0;
 
-    backdrop-filter: blur(10px);
-
-    border-radius: 15px;
-
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
+.card {
+width: 180px;
+min-height: 120px;
+
+background: rgba(255,255,255,0.75);
+border-radius: 15px;
+padding: 15px;
+
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+}
 .btn {
     background: linear-gradient(
         135deg,
@@ -79,16 +94,24 @@ h2 {
 }
 
 .usecases {
-margin-bottom: 25px;
-color: #cbd5e1;
+margin-top: 10px;
+margin-bottom: 20px;
+
+color: #475569;
+
+font-size: 1rem;
+
 }
 
 footer {
-position: absolute;
-bottom: 20px;
+margin-top: 20px;
+text-align: center;
+
+font-size: 0.95rem;
+
 }
 
 footer a {
-color: #93c5fd;
+color: #2563eb;
 text-decoration: none;
 }
