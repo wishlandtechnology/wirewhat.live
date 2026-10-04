@@ -35,10 +35,14 @@
 
     <h3>Precise Location (GPS)</h3>
     <p>
-        Used to match viewers with nearby publishers, announce live streams, and attach
-        approximate location information to uploaded replays. Location data may be sent
-        to our servers when you use location-based features such as requesting a stream,
-        going live, uploading a replay, or remaining available as a viewer or publisher.
+        Used to match viewers with nearby publishers, notify viewers when you go live, 
+        show publishers how far they are from an incoming request, and attach approximate 
+        location to uploaded replays. Location is sent to our servers while you have the app open 
+        and are using these features (requesting a stream, waiting for requests as a publisher, 
+        going live, or uploading a replay). **Location is collected only while the app is open 
+        and in use; WireWhat does not access your location in the background.** When the app is closed, 
+        matching uses the last location you shared while it was open. The app explains this and asks 
+        before Android's location permission prompt appears.
     </p>
 
     <h3>Camera and Microphone</h3>
@@ -48,33 +52,38 @@
         the session. Recorded videos may be processed on our servers and may be published
         to WireWhat Live's official YouTube channel for replay viewing.
     </p>
+    <h3>On-device face detection (live broadcasts)</h3>
+    <p>
+        When "Blur faces" is enabled for a live broadcast (on by default), the app detects faces directly 
+        on your device and blurs them in the video before it is streamed out, to help protect the privacy of 
+        bystanders. This detection runs entirely on-device — no image data is sent anywhere for this purpose. 
+        It is best-effort, not a guarantee: fast motion or brief detection gaps can leave a face unblurred for a moment. 
+        Recorded replay uploads go through a separate, additional server-side face-blur pass (see below) 
+    </p>
 
     <h3>Optional Stream Descriptions and Chat Messages</h3>
     <p>
-        Used to help viewers and publishers communicate and coordinate during live sessions.
+        Shared with the other party during a live session to coordinate help.
     </p>
 
     <h3>Device Token (Push Notifications)</h3>
     <p>
-        Used to notify publishers about incoming requests and viewers about nearby live
-        streams and service updates.
+        Used to notify publishers of incoming requests and viewers when a broadcaster goes live nearby.
     </p>
 
     <h2>Live Streams vs Recorded Replays</h2>
 
     <h3>Live Streams</h3>
     <p>
-        Live streams are delivered in real time. We do not permanently store live video
-        on our servers after a session ends unless you explicitly choose to save the
-        stream for replay publishing.
+        Live streams are delivered in real time. We do not permanently store the live video on our 
+        servers after the session ends, unless you opt in to save the stream to YouTube.
     </p>
 
     <h3>Recorded Replays</h3>
     <p>
-        Videos uploaded for replay may be stored temporarily for processing, including
-        watermarking and publishing. Replays may be published to our official YouTube
-        channel and made available to users. Titles, descriptions, and approximate
-        location information may be shown to nearby viewers searching for replays.
+        you upload are stored temporarily for processing (watermark, publish) and then published 
+        to our YouTube channel for others to watch. Title, description, and location may be shown 
+        to nearby viewers searching for replays.
     </p>
 
     <h2>How We Use Information</h2>
@@ -109,24 +118,27 @@
     <ul>
         <li>You may decline location, camera, or microphone permissions, although some features may not function properly.</li>
         <li>You may sign out of the application at any time.</li>
-        <li>You may request deletion of your account or personal data by contacting us.</li>
+        <li>Close your account from the mode selector menu (⋮ → Close account) to permanently delete your registration, 
+            phone index, publisher profile, and replay metadata stored on our servers. You will need to register again 
+            to use the app.
+        </li>
+        <li>YouTube replays already published before account closure are not automatically removed from YouTube. 
+            Contact support if you need a replay taken down.
+        </li>
+        <li>
+            To report safety, privacy, or abuse issues during a live session, use **Report** on the player or 
+            incoming-request screen, or **About → Report a problem**
+        </li>
     </ul>
 
     <h2>Account and Data Deletion</h2>
 
-    <p>
-        You may request deletion of your account and associated personal data by contacting
-        us at the email address below. We will make reasonable efforts to process deletion
-        requests within a reasonable period, subject to legal and operational requirements.
-    </p>
-
     <h2>Safety</h2>
 
     <p>
-        WireWhat Live does not independently verify all users. Please exercise caution when
-        interacting with others. Do not share sensitive personal information through
-        chat, live streams, or recorded content. Respect the privacy and rights of
-        others at all times.
+        WireWhat does not verify other users. You are responsible for your safety and for respecting others' privacy. 
+        Do not share sensitive personal information in chat or on camera. Use the app only for lawful purposes and only 
+        in places you are allowed to observe or record.
     </p>
 
     <h2>Changes to This Policy</h2>
