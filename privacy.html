@@ -12,7 +12,7 @@
 
     <h1>WireWhat Live Privacy Policy</h1>
 
-    <p><strong>Last Updated:</strong> June 2026</p>
+    <p><strong>Last Updated:</strong> November 2026</p>
 
     <p>
         This Privacy Policy explains how WireWhat Live, a product of Wishland Technology Private Limited,
@@ -35,35 +35,39 @@
 
     <h3>Precise Location (GPS)</h3>
     <p>
-        Used to match viewers with nearby publishers, notify viewers when you go live, 
-        show publishers how far they are from an incoming request, and attach approximate 
-        location to uploaded replays. Location is sent to our servers while you have the app open 
-        and are using these features (requesting a stream, waiting for requests as a publisher, 
-        going live, or uploading a replay). **Location is collected only while the app is open 
-        and in use; WireWhat does not access your location in the background.** When the app is closed, 
-        matching uses the last location you shared while it was open. The app explains this and asks 
-        before Android's location permission prompt appears.
+        Used to match viewers with nearby publishers, notify viewers when you go live,
+        show publishers how far they are from an incoming request, and attach approximate
+        location to uploaded replays. Location is sent to our servers while you have the app open
+        and are using these features (requesting a stream, waiting for requests as a publisher,
+        going live, or uploading a replay).
+        <strong>Location is collected only while the app is open and in use; WireWhat does not
+        access your location in the background.</strong>
+        When the app is closed, matching uses the last location you shared while it was open.
+        The app explains this and asks before Android's location permission prompt appears.
     </p>
 
     <h3>Camera and Microphone</h3>
     <p>
         Used when you broadcast live or record a video within the app. Live video and
         audio are streamed through our infrastructure and delivered to viewers who join
-        the session. Recorded videos may be processed on our servers and may be published
-        to WireWhat Live's official YouTube channel for replay viewing.
+        the session. The microphone is also used when you choose to use push-to-talk or
+        record a voice message in chat. Recorded videos you upload are processed on our servers
+        and may be published to WireWhat Live's official YouTube channel for replay viewing.
     </p>
-    <h3>On-device face detection (live broadcasts)</h3>
+
+    <h3>On-Device Face Detection (Live Broadcasts)</h3>
     <p>
-        When "Blur faces" is enabled for a live broadcast (on by default), the app detects faces directly 
-        on your device and blurs them in the video before it is streamed out, to help protect the privacy of 
-        bystanders. This detection runs entirely on-device — no image data is sent anywhere for this purpose. 
-        It is best-effort, not a guarantee: fast motion or brief detection gaps can leave a face unblurred for a moment. 
-        Recorded replay uploads go through a separate, additional server-side face-blur pass (see below) 
+        When "Blur faces" is enabled for a live broadcast (on by default), the app detects faces directly
+        on your device and blurs them in the video before it is streamed out, to help protect the privacy of
+        bystanders. This detection runs entirely on-device &mdash; no image data is sent anywhere for this purpose.
+        It is best-effort, not a guarantee: fast motion or brief detection gaps can leave a face unblurred
+        for a moment. Recorded replay uploads go through a separate, additional server-side face-blur pass.
     </p>
 
     <h3>Optional Stream Descriptions and Chat Messages</h3>
     <p>
-        Shared with the other party during a live session to coordinate help.
+        Stream descriptions and chat messages, including voice messages, are shared with the
+        other party during a live session to coordinate help.
     </p>
 
     <h3>Device Token (Push Notifications)</h3>
@@ -71,19 +75,31 @@
         Used to notify publishers of incoming requests and viewers when a broadcaster goes live nearby.
     </p>
 
+    <h3>Usage Analytics and Device Identifiers</h3>
+    <p>
+        We use Google Firebase Analytics to understand how the app is used and improve it.
+        This may include the Android advertising ID. We do not use it to show ads.
+    </p>
+
+    <h3>Crash Reports and Diagnostics</h3>
+    <p>
+        We use Google Firebase Crashlytics to collect crash logs and device information
+        so we can find and fix problems.
+    </p>
+
     <h2>Live Streams vs Recorded Replays</h2>
 
     <h3>Live Streams</h3>
     <p>
-        Live streams are delivered in real time. We do not permanently store the live video on our 
+        Live streams are delivered in real time. We do not permanently store the live video on our
         servers after the session ends, unless you opt in to save the stream to YouTube.
     </p>
 
     <h3>Recorded Replays</h3>
     <p>
-        you upload are stored temporarily for processing (watermark, publish) and then published 
-        to our YouTube channel for others to watch. Title, description, and location may be shown 
-        to nearby viewers searching for replays.
+        Recorded replays you upload are stored temporarily for processing (face blur, watermark, publishing)
+        and then published to our YouTube channel for others to watch. Title, description, and location
+        may be shown to nearby viewers searching for replays.
     </p>
 
     <h2>How We Use Information</h2>
@@ -104,8 +120,8 @@
     <p>
         We do not sell personal data. Information may be shared only when necessary
         to operate the service, including cloud hosting providers, SMS providers for
-        OTP verification, mapping services, YouTube replay publishing, analytics tools,
-        or when required by law.
+        OTP verification, mapping services, YouTube replay publishing, analytics and
+        crash reporting tools, or when required by law.
     </p>
 
     <p>
@@ -117,31 +133,50 @@
 
     <ul>
         <li>You may decline location, camera, or microphone permissions, although some features may not function properly.</li>
-        <li>You may sign out of the application at any time.</li>
-        <li>Close your account from the mode selector menu (⋮ → Close account) to permanently delete your registration, 
-            phone index, publisher profile, and replay metadata stored on our servers. You will need to register again 
-            to use the app.
-        </li>
-        <li>YouTube replays already published before account closure are not automatically removed from YouTube. 
-            Contact support if you need a replay taken down.
-        </li>
+        <li>You may sign out at any time from the mode selector menu (⋮ → Sign out).</li>
         <li>
-            To report safety, privacy, or abuse issues during a live session, use **Report** on the player or 
-            incoming-request screen, or **About → Report a problem**
+            To report safety, privacy, or abuse issues during a live session, use <strong>Report</strong> on the
+            player or incoming-request screen, or <strong>About → Report a problem</strong>.
         </li>
     </ul>
 
-    <h2>Account and Data Deletion</h2>
+    <h2 id="account-deletion">Account and Data Deletion</h2>
+
+    <p>
+        To delete your account in the app, open the mode selector menu and choose
+        <strong>⋮ → Close account</strong>. This permanently deletes your registration, phone index,
+        publisher profile, and replay metadata stored on our servers. You will need to register again
+        to use the app.
+    </p>
+
+    <p>
+        If you cannot access the app, email
+        <a href="mailto:support@wishlandtechnology.com">support@wishlandtechnology.com</a>
+        to request deletion of your account and data.
+    </p>
+
+    <p>
+        YouTube replays already published before account closure are not automatically removed from YouTube.
+        Contact support if you need a replay taken down.
+    </p>
 
     <h2>Safety</h2>
 
     <p>
-        WireWhat does not verify other users. You are responsible for your safety and for respecting others' privacy. 
-        Do not share sensitive personal information in chat or on camera. Use the app only for lawful purposes and only 
+        WireWhat does not verify other users. You are responsible for your safety and for respecting others' privacy.
+        Do not share sensitive personal information in chat or on camera. Use the app only for lawful purposes and only
         in places you are allowed to observe or record.
     </p>
 
     <h2>Changes to This Policy</h2>
+	<h3>Optional Stream Descriptions and Chat Messages</h3>
+    
+	<p>
+        Stream descriptions and chat messages, including voice messages and images, are shared with
+        participants in a live session to coordinate help. Chat messages are kept temporarily on our
+        servers and are normally deleted when the broadcast ends. Voice messages and images that are
+        not removed at that point are deleted automatically, typically within about two days.
+    </p>
 
     <p>
         We may update this Privacy Policy from time to time. The latest version will
@@ -161,12 +196,12 @@
     </p>
 
     <p>
-        Email: support@wishlandtechnology.com
+        Email: <a href="mailto:support@wishlandtechnology.com">support@wishlandtechnology.com</a>
     </p>
 
     <p>
         <a href="index.html">← Back to Home</a> |
-        <a href="terms.html">Terms & Conditions</a> |
+        <a href="terms.html">Terms &amp; Conditions</a> |
         <a href="community.html">Community Guidelines</a> |
         <a href="mailto:support@wishlandtechnology.com">Contact</a>
     </p>
